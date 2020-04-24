@@ -1,0 +1,42 @@
+{
+    "title" : {
+        "en": "Easiest and convenient service for copy and paste Font Awesome icons for a site",
+        "ru": "Простой и удобный сервис подбора и вставки иконок Font Awesome для сайта"
+    },
+    "description" : {
+        "en": "On this page you can easily select the Font Awesome icon and in one click copy the finished tag to be inserted into the HTML code of the site",
+        "ru": "На этой странице вы можете легко выбрать иконку Font Awesome и в один клик скопировать готовый тег для вставки в HTML-код сайта."
+    },
+    "h1": {
+        "en": "Font Awesome Icons",
+        "ru": "Иконки Font Awesome для сайта"
+    },
+    "heading_add_link" : {
+        "en": "Add this line beetween &lt;HEAD&gt; and &lt;/HEAD&gt; tags on your site",
+        "ru": "Вставьте этот код между тегами &lt;HEAD&gt; и &lt;/HEAD&gt; вашего сайта"
+    },
+    "click_to_copy" : {
+        "en": "Click to copy",
+        "ru": "Кликните чтобы скопировать в буфер"
+    },
+    "heading_choose_tag" : {
+        "en": "Choose HTML-tag",
+        "ru": "Выберите HTML-тег"
+    },
+    "tag_just_name" : {
+        "en": "just tag name",
+        "ru": "только имя класса"
+    },
+    "heading_choose_icon" : {
+        "en": "Choose icon",
+        "ru": "Выберите нужную иконку"
+    },
+    "click_on_item" : {
+        "en": "Click on name or HEX to copy",
+        "ru": "Кликните по имени класса или шеснадцатиричному коду, чтобы скопировать"
+    },
+    "copy_to_clipboard" : {
+        "en": "Copy to clipboard",
+        "ru": "Копировать в буфер"
+    }
+}

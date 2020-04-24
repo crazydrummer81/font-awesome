@@ -1,6 +1,5 @@
 function copyToClipboard(elem) {
     var text = elem.textContent.trim();
-    console.log(elem);
 
     console.log(getWrapper("tag"));
     var tag = getWrapper("tag");
@@ -8,7 +7,7 @@ function copyToClipboard(elem) {
     var prefix = "";
     var postfix = "";
 
-    if( elem.id != "fa-link" ) {
+    if( (elem.id != "fa-link") && (elem.id != "icon-value") ) {
         switch(tag) {
             case 'i': 
                 prefix = "<i class='fa "; postfix = "'></i>";
