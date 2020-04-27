@@ -18,7 +18,6 @@
 $text = json_decode( file_get_contents("json/text.json") );
 // var_dump_pre( $json );
 ?>
-
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>">
 
@@ -31,14 +30,31 @@ $text = json_decode( file_get_contents("json/text.json") );
     <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+	
+	<meta name="yandex-verification" content="ac7b969ad6029368" />
+	<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+		   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		   (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+		   ym(62278579, "init", {
+				clickmap:true,
+				trackLinks:true,
+				accurateTrackBounce:true,
+				webvisor:true
+		   });
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/62278579" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
     <header>
         <h1 class="icons-table-title"><?php echo $text->h1->$lang; ?></h1>
         <div class="language">
-            <a href="/"><img class="lang-flag" src="img/en.svg" alt=""></a>
-            <a href="/ru"><img class="lang-flag" src="img/ru.svg" alt=""></a>
+            <a href="./"><img class="lang-flag" src="img/en.svg" alt=""></a>
+            <a href="./?lang=ru"><img class="lang-flag" src="img/ru.svg" alt=""></a>
         </div>
     </header>
 
@@ -72,7 +88,7 @@ $text = json_decode( file_get_contents("json/text.json") );
         <h2><?php echo $text->heading_choose_icon->$lang; ?></h2>
         <div class="notice" style='margin-bottom:-0.5em; margin-top:0.5em;'><?php echo $text->click_on_item->$lang; ?>:</div>
     </section>
-
+    <section class="icons-table">
 <?php 
     // $json = file_get_contents("fonts/awesome.json");
     // $icons = json_decode($json,true)['icons'];
@@ -95,8 +111,7 @@ $text = json_decode( file_get_contents("json/text.json") );
     foreach( $icons_columns as $column ) :
         $n_rows = round(count($column) / $columns_per_row, 0, PHP_ROUND_HALF_UP);
 ?>    
-
-    <section class="icons-table">
+    
         <div class="icons-table-row" style="grid-template-rows: repeat(<?php echo $n_rows; ?>, 1fr);">
 <?php
         foreach( $column as $item ) :
@@ -109,11 +124,15 @@ $text = json_decode( file_get_contents("json/text.json") );
 <?php
         endforeach;
         echo "\n</div>\n";
+        if( next($icons_columns) ) echo "\n<div class='divider'></div>\n";
     endforeach;
 ?>
 
     
-</section>
+    </section>
+    <footer>
+    &copy; Mansur Mamirov <?php echo date("Y"); ?>
+    </footer>
 
 
 </body>
