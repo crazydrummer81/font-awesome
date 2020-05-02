@@ -153,7 +153,7 @@ i {
     margin-bottom: 0;
     display: inline-flex;
     cursor: pointer;
-	word-break: break-all;
+    word-break: break-all;
 }
 .form-tag-select input[type=radio] {
 	display: none;
@@ -185,7 +185,9 @@ i {
  
 /* Checked */
 .form-tag-select input[type=radio]:checked + label {
-	background: rgb(244, 252, 249);;
+	background: rgb(244, 252, 249);
+	color: green;
+	font-weight: 700;
 }
  
 /* Hover */
