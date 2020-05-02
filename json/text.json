@@ -24,7 +24,7 @@
         "ru": "Выберите HTML-тег"
     },
     "tag_just_name" : {
-        "en": "just tag name",
+        "en": "just class name",
         "ru": "только имя класса"
     },
     "heading_choose_icon" : {
